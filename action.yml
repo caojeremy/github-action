@@ -1,9 +1,9 @@
-# action.yml
-name: "Say Hello to Author"
-description: "Print a hello message to the PR author"
-author: "caojeremy"
-inputs: {}
-outputs: {}
+name: "My First Action"
+description: "Say hello to someone"
+inputs:
+  name:
+    description: "The name to greet"
+    required: true
 runs:
   using: "node16"
-  main: "index.js"
+  main: "dist/index.js" # 注意这里用的是打包后的路径
